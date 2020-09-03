@@ -1,0 +1,35 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background-color: $color-accents-dark;
+
+  &__text {
+    display: inline-block;
+    text-align: center;
+    font-family: $font-titles;
+    font-size: 20px;
+    color: $color-font-primary;
+    h2 {
+      margin-bottom: 60px;
+      font-size: 30px;
+      color: $color-font-secondary;
+    }
+
+    small,
+    span:not(:last-child) {
+      display: block;
+      margin-bottom: 10px;
+    }
+    small {
+      color: $color-font-secondary;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+  }
+}
+.nav-bar {
+  height: 100%;
+  width: 100%;
+}
