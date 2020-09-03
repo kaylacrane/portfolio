@@ -2,17 +2,20 @@ import React from "react";
 
 function Box() {
   function rotateBox(event) {
-    console.log(event.deltaY);
     const box = document.querySelector(".box");
+    if (event.type === "touchmove") {
+      box.classList.toggle("move-it");
+    }
+
     if (event.deltaY > 0) {
       box.classList.add("move-it");
     } else if (event.deltaY < 0) {
       box.classList.remove("move-it");
     }
-    console.log("hi");
   }
 
   window.addEventListener("wheel", rotateBox);
+  window.addEventListener("touchmove", rotateBox);
   return (
     <div className="scene">
       <div className="box">

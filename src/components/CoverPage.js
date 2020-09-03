@@ -2,6 +2,7 @@ import React from "react";
 import Box from "./Box";
 
 function CoverPage() {
+  const isMobile = navigator.userAgent.includes("Mobi");
   return (
     <>
       <Box />
@@ -11,7 +12,7 @@ function CoverPage() {
           <span>I'm still working on this... </span>
           <span>Check in later, ok?</span>
           <span>See you then!</span>
-          <small>scroll</small>
+          <small>{isMobile ? "swipe" : "scroll"}</small>
           <span className="icon fas fa-chevron-down"></span>
         </div>
       </div>
