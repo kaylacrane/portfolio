@@ -11,7 +11,6 @@ function App() {
     <>
       <div className="App">
         <Menu />
-
         <Switch>
           <Route exact path="/" component={CoverPage} />
           <Route exact path="/about" component={About} />

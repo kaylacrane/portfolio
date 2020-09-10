@@ -20,6 +20,26 @@ function CoverPage() {
           <span>I hope you enjoy!</span>
           <small>-kayla</small>
         </div>
+        <div className="social-media">
+          <a
+            href="https://www.linkedin.com/in/kaylacrane/"
+            title="Visit my LinkedIn page"
+          >
+            <span className="icon fa-lg fab fa-linkedin"></span>
+          </a>
+          <a href="https://github.com/kaylacrane" title="Visit my GitHub page">
+            <span className="icon fa-lg fab fa-github-square"></span>
+          </a>
+          <a
+            href="https://twitter.com/KaylaJCrane"
+            title="Visit my Twitter page"
+          >
+            <span className="icon fa-lg fab fa-twitter-square"></span>
+          </a>
+          <a href="mailto:kayla.crane@gmail.com" title="Send me an email">
+            <span className="icon fa-lg fas fa-envelope-square"></span>
+          </a>
+        </div>
       </div>
     </>
   );

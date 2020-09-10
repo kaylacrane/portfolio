@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import photo from "../images/kayla.jpg";
 
 const me = [
-  "💻 frontend developer",
+  "💻 programmer",
   "gardener 👩‍🌾",
   "language lover",
   "tea drinker ☕",
@@ -10,6 +10,7 @@ const me = [
   "science nerd 🧪",
   "📚 lifelong student",
   "country 🚜 girl",
+  "goofy dork 🤪",
 ];
 
 const qAndA = [
@@ -21,7 +22,7 @@ const qAndA = [
   {
     question: "Do you miss anything about being a teacher?",
     answer:
-      "I miss sharing knowledge and seeing how my students got better and better.",
+      "I miss sharing knowledge and seeing my students get better and better.",
   },
   {
     question: "What do you like about programming?",
@@ -54,7 +55,7 @@ function About() {
   return (
     <>
       <div className="contact-page">
-        <div className="image-container">
+        <div className="image-container roll-in-right">
           <img src={photo} alt="happy programmer" />
         </div>
 

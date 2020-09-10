@@ -3,15 +3,15 @@
   margin: 0;
   list-style: none;
   box-sizing: border-box;
-  overscroll-behavior: contain;
 }
 .App {
-  height: calc(100vh-80px);
+  max-height: 100%;
   overflow-y: scroll;
   width: 100vw;
   position: relative;
   font-family: $font-text;
   font-size: 22px;
+  margin-top: 80px;
   padding: 35px;
   margin-top: 100px;
   text-align: center;

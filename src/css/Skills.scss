@@ -1,0 +1,90 @@
+.skills-page {
+  height: 100%;
+  .skills-section {
+    margin-bottom: 45px;
+  }
+  .title {
+    color: $color-font-secondary;
+    margin-bottom: 30px;
+  }
+  .skills-list {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    span {
+      transition: 0.5s ease all;
+    }
+    span:hover {
+      transform: scale(1.5);
+    }
+    .skill-low {
+      font-size: 18px;
+      background-color: $color-light-2;
+    }
+    .skill-medium {
+      font-size: 22px;
+      background-color: $color-light-1;
+    }
+    .skill-high {
+      font-size: 32px;
+      background-color: $color-accents;
+    }
+  }
+}
+
+//animations
+
+.flip-in-ver-right {
+  -webkit-animation: flip-in-ver-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: flip-in-ver-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+.fade-in {
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -8,7 +8,6 @@
   left: 0;
   width: 100vw;
   height: 80px;
-  //   border: 2px solid red;
   perspective: 600px;
   z-index: 50;
 }
@@ -16,7 +15,6 @@
   width: 100%;
   height: 100%;
   position: relative;
-  //   transform: rotateX(15deg) rotateY(15deg);
   transition: 1s all;
   transform-style: preserve-3d;
   font-family: $font-titles;
@@ -25,28 +23,21 @@
   transform: rotateX(-90deg);
 }
 .box > div {
-  //   opacity: 0.8;
   background: white;
   width: 100vw;
   height: 100%;
   position: absolute;
 }
 .box .front {
-  transform: translateZ(5vh);
   text-align: center;
-  background: $color-white;
   border: none;
-  // opacity: 1;
 }
 .front .open-icon {
   margin-top: 20px;
   color: $color-dark-2;
-  font-size: 30px;
+  font-size: 50px;
 }
-.box .back {
-  transform: rotateZ(0deg) translateZ(-5vh) rotateY(180deg) rotateZ(180deg);
-  //   background: darkblue;
-}
+
 .box .top {
   transform: translateY(-5vh) rotateX(90deg);
   background: $color-accents;
@@ -56,7 +47,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   background-color: $color-accents;
   padding: 5px 10px;
   border-bottom-left-radius: 50%;
@@ -90,7 +81,4 @@
 .menu a:hover {
   background-color: $color-dark-2;
   color: $color-accents;
-  //   border: 5px inset #acaaaa;
-  //   color: darkgrey;
-  //   transform: rotateY(360deg);
 }
