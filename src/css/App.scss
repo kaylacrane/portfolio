@@ -6,6 +6,13 @@
   overscroll-behavior: contain;
 }
 .App {
-  height: 100vh;
+  height: calc(100vh-80px);
+  overflow-y: scroll;
+  width: 100vw;
   position: relative;
+  font-family: $font-text;
+  font-size: 22px;
+  padding: 35px;
+  margin-top: 100px;
+  text-align: center;
 }

@@ -1,16 +1,14 @@
 .cover {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: $color-white;
-  padding: 25px;
 
   &__text {
     display: inline-block;
-    text-align: center;
-    font-family: $font-text;
-    font-size: 20px;
+
     color: $color-font-secondary;
     line-height: 1.5;
     .hand {

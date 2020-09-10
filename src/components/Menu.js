@@ -29,16 +29,14 @@ function Menu() {
               <Link to={{ pathname: "/" }}>
                 <li>home</li>
               </Link>
-
+              <Link to={{ pathname: "/about" }}>
+                <li>about</li>
+              </Link>
               <Link to={{ pathname: "/skills" }}>
                 <li>skills</li>
               </Link>
               <Link to={{ pathname: "/projects" }}>
                 <li>projects</li>
-              </Link>
-
-              <Link to={{ pathname: "/contact" }}>
-                <li>contact</li>
               </Link>
             </ul>
           </nav>

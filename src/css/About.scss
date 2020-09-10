@@ -1,0 +1,59 @@
+.contact-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .image-container {
+    width: 280px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .social-media {
+    // margin-top: 10px;
+    position: relative;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background: $color-dark-2;
+    a {
+      height: 100%;
+      margin: 0 8px;
+      color: $color-white;
+      transition: all 0.8s ease-in-out;
+
+      &:hover {
+        color: $color-accents;
+      }
+    }
+  }
+
+  .intro {
+    margin-top: -10px;
+    font-size: 22px;
+  }
+  .highlight {
+    color: $color-light-1;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .questions-list {
+    margin-top: 25px;
+    h2 {
+      padding: 10px;
+      border-radius: 10px;
+      background: $color-light-2;
+      color: $color-white;
+    }
+  }
+  .questions-list > li,
+  .questions-list h4 {
+    margin: 20px 0;
+  }
+}
