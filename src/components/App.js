@@ -1,11 +1,25 @@
 import React from "react";
 import CoverPage from "./CoverPage";
+import Contact from "./Contact";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Menu from "./Menu";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <CoverPage />
-    </div>
+    <>
+      <div className="App">
+        <Menu />
+
+        <Switch>
+          <Route exact path="/" component={CoverPage} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/skills" component={Skills} />
+        </Switch>
+      </div>
+    </>
   );
 }
 

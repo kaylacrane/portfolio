@@ -1,19 +1,16 @@
-import React from "react";
-import Box from "./Box";
+import React, { useState, useEffect } from "react";
+
+import { Router } from "react-router-dom";
 
 function CoverPage() {
-  const isMobile = navigator.userAgent.includes("Mobi");
   return (
     <>
-      <Box />
       <div className="cover">
         <div className="cover__text">
-          <h2>Oh, hey there!</h2>
-          <span>I'm still working on this... </span>
-          <span>Check in later, ok?</span>
+          <span className="hand shake-br">👋</span>
+          <h2>Hi there</h2>
+
           <span>See you then!</span>
-          <small>{isMobile ? "swipe" : "scroll"}</small>
-          <span className="icon fas fa-chevron-down"></span>
         </div>
       </div>
     </>

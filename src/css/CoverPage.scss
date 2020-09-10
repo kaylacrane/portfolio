@@ -3,18 +3,21 @@
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  background-color: $color-accents-dark;
+  background-color: $color-white;
 
   &__text {
     display: inline-block;
     text-align: center;
     font-family: $font-titles;
     font-size: 20px;
-    color: $color-font-primary;
+    color: $color-font-secondary;
     h2 {
       margin-bottom: 60px;
       font-size: 30px;
-      color: $color-font-secondary;
+      color: $color-dark-1;
+    }
+    .highlight {
+      color: $color-light-1;
     }
 
     small,
