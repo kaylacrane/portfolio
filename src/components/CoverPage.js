@@ -7,8 +7,8 @@ function CoverPage() {
     <>
       <div className="cover">
         <div className="cover__text">
-          <h2 className="scale-in-hor-left">Hi there!</h2>
           <span className="hand wobble-hor-bottom">👋</span>
+          <h2 className="scale-in-hor-left">Hi there!</h2>
           <span>You are staring at the frontpage of my portfolio.</span>
           <span>
             <span className="highlight">

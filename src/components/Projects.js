@@ -64,11 +64,7 @@ const createProjectCards = projects.map((project, index) => {
 function openInfo(event) {
   const project = event.currentTarget;
   const info = project.querySelector(".project-info");
-  if (!info.classList.contains("open-info")) {
-    info.classList.add("open-info");
-  } else {
-    info.classList.remove("open-info");
-  }
+  info.classList.toggle("open-info");
 }
 function Projects() {
   return (

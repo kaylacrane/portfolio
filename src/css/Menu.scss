@@ -8,7 +8,7 @@
   left: 0;
   width: 100vw;
   height: 80px;
-  perspective: 600px;
+  perspective: 1200px;
   z-index: 50;
 }
 .box {
@@ -23,7 +23,7 @@
   transform: rotateX(-90deg);
 }
 .box > div {
-  background: white;
+  background: transparent;
   width: 100vw;
   height: 100%;
   position: absolute;
@@ -31,15 +31,19 @@
 .box .front {
   text-align: center;
   border: none;
+  transform: translateZ(5vh);
 }
-.front .open-icon {
+.open-icon {
   margin-top: 20px;
   color: $color-dark-2;
   font-size: 50px;
+  border-radius: 50%;
+  padding: 2px 6px;
+  text-shadow: 0 3px 5px $color-font-primary;
 }
 
 .box .top {
-  transform: translateY(-5vh) rotateX(90deg);
+  transform: rotateX(90deg) translateZ(45px);
   background: $color-accents;
 }
 .close-icon {
@@ -54,18 +58,20 @@
   border-bottom-right-radius: 50%;
   color: $color-dark-2;
   transition: all 1.2s linear;
+  box-shadow: 0 2px 2px $color-font-primary;
 }
 .move-icon {
-  transform: translate(-50%, 65%);
+  transform: translate(-50%, 50%);
 }
 .menu {
   text-align: center;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   z-index: 5;
+  box-shadow: 0 2px 5px $color-font-primary;
 }
 .menu > a {
   padding: 5px;
