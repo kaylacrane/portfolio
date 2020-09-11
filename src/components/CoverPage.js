@@ -7,8 +7,8 @@ function CoverPage() {
     <>
       <div className="cover">
         <div className="cover__text">
-          <span className="hand wobble-hor-bottom">👋</span>
           <h2 className="scale-in-hor-left">Hi there!</h2>
+          <span className="hand wobble-hor-bottom">👋</span>
           <span>You are staring at the frontpage of my portfolio.</span>
           <span>
             <span className="highlight">
@@ -25,19 +25,25 @@ function CoverPage() {
             href="https://www.linkedin.com/in/kaylacrane/"
             title="Visit my LinkedIn page"
           >
-            <span className="icon fa-lg fab fa-linkedin"></span>
+            <span className="icon fab fa-linkedin-in"></span>
           </a>
           <a href="https://github.com/kaylacrane" title="Visit my GitHub page">
-            <span className="icon fa-lg fab fa-github-square"></span>
+            <span className="icon fab fa-github"></span>
           </a>
           <a
             href="https://twitter.com/KaylaJCrane"
             title="Visit my Twitter page"
           >
-            <span className="icon fa-lg fab fa-twitter-square"></span>
+            <span className="icon fab fa-twitter"></span>
+          </a>
+          <a
+            href="https://codepen.io/kaylacrane/"
+            title="Visit my CodePen page"
+          >
+            <span className="icon fas fa-cube"></span>
           </a>
           <a href="mailto:kayla.crane@gmail.com" title="Send me an email">
-            <span className="icon fa-lg fas fa-envelope-square"></span>
+            <span className="icon far fa-envelope"></span>
           </a>
         </div>
       </div>

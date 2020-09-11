@@ -47,9 +47,10 @@ function About() {
   });
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       setMeIndex((meIndex) => (meIndex === me.length - 1 ? 0 : meIndex + 1));
     }, 2000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -64,19 +65,25 @@ function About() {
             href="https://www.linkedin.com/in/kaylacrane/"
             title="Visit my LinkedIn page"
           >
-            <span className="icon fa-2x fab fa-linkedin"></span>
+            <span className="icon fab fa-linkedin-in"></span>
           </a>
           <a href="https://github.com/kaylacrane" title="Visit my GitHub page">
-            <span className="icon fa-2x fab fa-github-square"></span>
+            <span className="icon fab fa-github"></span>
           </a>
           <a
             href="https://twitter.com/KaylaJCrane"
             title="Visit my Twitter page"
           >
-            <span className="icon fa-2x fab fa-twitter-square"></span>
+            <span className="icon fab fa-twitter"></span>
+          </a>
+          <a
+            href="https://codepen.io/kaylacrane/"
+            title="Visit my CodePen page"
+          >
+            <span className="icon fas fa-cube"></span>
           </a>
           <a href="mailto:kayla.crane@gmail.com" title="Send me an email">
-            <span className="icon fa-2x fas fa-envelope-square"></span>
+            <span className="icon far fa-envelope"></span>
           </a>
         </div>
         <div className="intro">
