@@ -11,7 +11,7 @@ function Menu() {
     closeIcon.classList.toggle("move-icon");
   }
   return (
-    <div className="scene">
+    <div className="menu scene">
       <div className="box">
         <div className="front">
           <span
@@ -25,7 +25,7 @@ function Menu() {
               className="fas fa-times-circle close-icon"
               onClick={rotateBox}
             ></span>
-            <ul className="menu">
+            <ul className="links-list">
               <Link to={{ pathname: "/" }}>
                 <li>home</li>
               </Link>

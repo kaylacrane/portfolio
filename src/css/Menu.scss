@@ -2,13 +2,13 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-.scene {
+.menu.scene {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 80px;
-  perspective: 1200px;
+  perspective: 600px;
   z-index: 50;
 }
 .box {
@@ -31,10 +31,10 @@
 .box .front {
   text-align: center;
   border: none;
-  transform: translateZ(5vh);
+  transform: translateZ(40px);
 }
 .open-icon {
-  margin-top: 20px;
+  margin-top: 20px auto;
   color: $color-dark-2;
   font-size: 50px;
   border-radius: 50%;
@@ -63,7 +63,7 @@
 .move-icon {
   transform: translate(-50%, 50%);
 }
-.menu {
+.links-list {
   text-align: center;
   height: 100%;
   max-width: 100%;
@@ -72,8 +72,11 @@
   align-items: center;
   z-index: 5;
   box-shadow: 0 2px 5px $color-font-primary;
+  @include desktop {
+    justify-content: center;
+  }
 }
-.menu > a {
+.links-list > a {
   padding: 5px;
   color: $color-dark-1;
   font-weight: bold;
@@ -82,9 +85,13 @@
   height: fit-content;
   border-radius: 10px;
   border: 5px solid transparent;
+  @include desktop {
+    margin: 0 30px;
+  }
 }
 
-.menu a:hover {
+.links-list a:hover {
   background-color: $color-dark-2;
   color: $color-accents;
+  box-shadow: 0 2px 5px $color-font-secondary;
 }

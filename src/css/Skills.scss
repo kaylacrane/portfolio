@@ -1,11 +1,30 @@
 .skills-page {
   height: 100%;
   .skills-section {
-    margin-bottom: 45px;
+    padding-bottom: 45px;
+    @include desktop {
+      padding-bottom: 50px;
+    }
   }
   .title {
     color: $color-font-secondary;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    @include tablet {
+      font-size: 46px;
+      padding-bottom: 25px;
+    }
+  }
+  .download-cv {
+    padding: 10px;
+    background-color: $color-dark-2;
+    border-style: none;
+    border-radius: 10px;
+    color: $color-white;
+    box-shadow: 0 0 5px $color-font-secondary;
+    transition: all 0.8s ease-in;
+    &:hover {
+      background-color: $color-light-1;
+    }
   }
   .skills-list {
     width: 100%;
@@ -15,8 +34,17 @@
     flex-wrap: wrap;
     text-align: center;
     gap: 10px;
+    @include tablet {
+      width: 400px;
+    }
+    @include desktop {
+      width: 700px;
+    }
     span {
       transition: 0.5s ease all;
+      @include desktop {
+        margin: 5px;
+      }
     }
     span:hover {
       transform: scale(1.5);
@@ -24,67 +52,23 @@
     .skill-low {
       font-size: 18px;
       background-color: $color-light-2;
+      @include desktop {
+        font-size: 24px;
+      }
     }
     .skill-medium {
       font-size: 22px;
       background-color: $color-light-1;
+      @include desktop {
+        font-size: 30px;
+      }
     }
     .skill-high {
       font-size: 32px;
       background-color: $color-accents;
+      @include desktop {
+        font-size: 36px;
+      }
     }
-  }
-}
-
-//animations
-
-.flip-in-ver-right {
-  -webkit-animation: flip-in-ver-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: flip-in-ver-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes flip-in-ver-right {
-  0% {
-    -webkit-transform: rotateY(-80deg);
-    transform: rotateY(-80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-    opacity: 1;
-  }
-}
-@keyframes flip-in-ver-right {
-  0% {
-    -webkit-transform: rotateY(-80deg);
-    transform: rotateY(-80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-    opacity: 1;
-  }
-}
-.fade-in {
-  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
