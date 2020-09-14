@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
-
-import { Router } from "react-router-dom";
+import React from "react";
 
 function CoverPage() {
   return (
     <>
       <div className="cover">
         <div className="cover__text">
-          <span className="hand wobble-hor-bottom">👋</span>
+          <span
+            className="hand wobble-hor-bottom"
+            role="img"
+            aria-label="waving hand"
+          >
+            👋
+          </span>
           <h2 className="scale-in-hor-left">Hi there!</h2>
           <span>You are staring at the frontpage of my portfolio.</span>
           <span>

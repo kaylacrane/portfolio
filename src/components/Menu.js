@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
 function Menu() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   function rotateBox() {
-    const box = document.querySelector(".box");
-    box.classList.toggle("move-box");
-
-    const closeIcon = box.querySelector(".close-icon");
-    closeIcon.classList.toggle("move-icon");
+    if (isMenuOpen === false) {
+      setIsMenuOpen(true);
+    } else {
+      setIsMenuOpen(false);
+    }
   }
   return (
     <div className="menu scene">
-      <div className="box">
+      <div className={`box ${isMenuOpen ? "move-box" : ""}`}>
         <div className="front">
           <span
             className="open-icon fas fa-chevron-down"
@@ -22,7 +23,9 @@ function Menu() {
         <div className="top">
           <nav className="nav-bar">
             <span
-              className="fas fa-times-circle close-icon"
+              className={`fas fa-times-circle close-icon ${
+                isMenuOpen ? "move-icon" : ""
+              }`}
               onClick={rotateBox}
             ></span>
             <ul className="links-list">
