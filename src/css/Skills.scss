@@ -1,9 +1,9 @@
 .skills-page {
   height: 100%;
   .skills-section {
-    padding-bottom: 45px;
+    padding-bottom: 40px;
     @include desktop {
-      padding-bottom: 50px;
+      padding-bottom: 45px;
     }
   }
   .title {
