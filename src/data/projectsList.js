@@ -58,11 +58,31 @@ export const projectsList = [
   },
   {
     id: 7,
+    name: "Matching Game",
+    github: "https://github.com/kaylacrane/memory-game-javascript",
+    url: "https://kaylacrane.github.io/memory-game-javascript/",
+    description:
+      "A simple matching game made with vanilla JavaScript. Created for my 5 year old niece.",
+    image:
+      "https://github.com/kaylacrane/memory-game-javascript/blob/master/memory-game.png?raw=true",
+  },
+  {
+    id: 8,
     name: "My Pokemon List",
     github: "https://github.com/kaylacrane/my-pokemons",
     url: "https://kaylacrane.github.io/my-pokemons/",
     description: "Pokemon character search with favorites function.",
     image:
       "https://github.com/kaylacrane/my-pokemons/blob/master/src/images/webpage-screenshot.PNG?raw=true",
+  },
+  {
+    id: 9,
+    name: "Silly Stories",
+    github: "https://github.com/kaylacrane/madlibs-react",
+    url: "https://kaylacrane.github.io/madlibs-react/",
+    description:
+      "Story generator based on Mad Libs. Made with React, Styled Components, SASS, API fetch, and more.",
+    image:
+      "https://github.com/kaylacrane/madlibs-react/blob/master/madlibs-game.png?raw=true",
   },
 ];

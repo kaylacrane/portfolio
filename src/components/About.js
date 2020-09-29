@@ -28,7 +28,7 @@ function About() {
           <p>
             My name is <span className="highlight">Kayla</span>
           </p>
-          <p>and Im a ... </p>
+          <p>and I'm a ... </p>
           <p className="highlight">{mePhrases[meIndex]}</p>
         </div>
 
