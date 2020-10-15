@@ -2,11 +2,9 @@
 
 ## My name is Kayla and I'm a Frontend Developer
 
-Please have a look at my portfolio. 
-
 If you have any questions or would like to get in touch, please don't hesitate to do so.
 
-My contact info in in the About section of my portfolio.
+My contact info is in the About section of my portfolio.
 
 Thanks!
 
